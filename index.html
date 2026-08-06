@@ -117,7 +117,118 @@
 <br>
  <div class="intro">FYI: This is a fictitious data contract that could feed <a href="https://agenticsgrowthlab.github.io/Datavant-Demo_Platform-Health-Mission/" target="_blank" style="color:var(--section); text-decoration:underline;">dashboards</a> used to visually manage Platform Health: Availability, Performance & Observability</div>
 <br>
-  
+  <section class="data-flow-intro" aria-label="Platform data flow">
+  <div class="flow-step">Transaction</div>
+
+  <div class="flow-arrow" aria-hidden="true">↓</div>
+
+  <div class="flow-step">Standardized Event</div>
+
+  <div class="flow-arrow" aria-hidden="true">↓</div>
+
+  <div class="flow-step">Shared Data Contract</div>
+
+  <div class="flow-arrow" aria-hidden="true">↓</div>
+
+  <div class="flow-step">Operational Data Layer</div>
+
+  <div class="flow-arrow" aria-hidden="true">↓</div>
+
+  <div class="flow-consumers">
+    <div class="flow-consumers-title">Consumers</div>
+
+    <div class="flow-consumer-list">
+      <span>Dashboards</span>
+      <span>Alerts</span>
+      <span>Analytics</span>
+      <span>APIs</span>
+      <span>Automation</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .data-flow-intro {
+    width: min(100%, 760px);
+    margin: 32px auto 46px;
+    padding: 30px 24px;
+    text-align: center;
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: #f5f5f5;
+    background: #08090c;
+    border: 1px solid #292d35;
+    border-radius: 12px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  }
+
+  .flow-step {
+    display: inline-block;
+    min-width: 270px;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    background: #11141a;
+    border: 1px solid #3a404b;
+    border-radius: 7px;
+  }
+
+  .flow-arrow {
+    margin: 9px 0;
+    color: #a98adb;
+    font-size: 25px;
+    line-height: 1;
+  }
+
+  .flow-consumers {
+    padding: 17px 18px;
+    background: #11141a;
+    border: 1px solid #4b2e83;
+    border-radius: 8px;
+  }
+
+  .flow-consumers-title {
+    margin-bottom: 12px;
+    color: #bba4e5;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .flow-consumer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+  }
+
+  .flow-consumer-list span {
+    padding: 7px 11px;
+    color: #ffffff;
+    background: #1b1f27;
+    border: 1px solid #353b47;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    .data-flow-intro {
+      margin-top: 20px;
+      padding: 24px 14px;
+    }
+
+    .flow-step {
+      width: 100%;
+      min-width: 0;
+      font-size: 13px;
+    }
+
+    .flow-consumer-list {
+      flex-direction: column;
+    }
+  }
+</style>
   <!-- ============================================================ -->
   <div class="section">
     <div class="sec-head">
